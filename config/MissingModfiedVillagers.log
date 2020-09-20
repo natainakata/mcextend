@@ -1,0 +1,12 @@
++------------------------------------------+
+ This log file is output only.
+ このファイルはコンフィグじゃありませんよ
++------------------------------------------+
+
+
++--------------------------------------+
+ Please append this list to config
+ 村人の職業をconfigに追記してちょーだい
+ config/ModifiedMaidVillagerSetting.cfg
++--------------------------------------+
+extrautils2:shady_merchant,immersiveengineering:engineer,
