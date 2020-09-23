@@ -19,6 +19,6 @@ val immImgot = [
 ] as IOreDictEntry[];
 
 
-for i in 30 .. 40 {
+for i in 30 .. 41 {
   recipes.removeShapeless(immMetal.makeStack(i), [<immersiveengineering:tool>, immImgot[i - 30]]);
 }
