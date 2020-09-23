@@ -3,7 +3,6 @@
 /coremods/
 /crash-reports/
 /journeymap/
-!/journeymap/config/5.7/
 /LittleMaidResource/
 /local/
 /logs/
@@ -34,3 +33,4 @@ optionsshaders.txt
 !/config/defaultoptions/options.txt
 /config/tellme/
 /scripts/recipes.zs
+!/journeymap/config
