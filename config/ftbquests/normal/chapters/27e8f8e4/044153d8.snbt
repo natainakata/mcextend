@@ -1,0 +1,31 @@
+{
+	x: 0.0d,
+	y: 0.0d,
+	text: [
+		"{mcextend.chapter.first.quests.readme.desc}"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "c3bf3b19",
+		type: "checkmark",
+		title: "{mcextend.chapter.first.quests.readme.title}"
+	}],
+	rewards: [{
+		uid: "df4c078e",
+		type: "ftbmoney:money",
+		ftb_money: 3000L
+	},
+	{
+		uid: "a0b2da37",
+		type: "item",
+		item: {
+			ForgeCaps: {
+				"astralsorcery:cap_item_amulet_holder": {}
+			},
+			id: "thermalexpansion:satchel",
+			tag: {
+				Accessible: 1b
+			}
+		}
+	}]
+}

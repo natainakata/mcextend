@@ -1,0 +1,12 @@
+{
+	x: -1.5d,
+	y: 1.5d,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "70b70784",
+		type: "advancement",
+		title: "{mcextend.chapter.first.quests.climatedamage.title}",
+		advancement: "dcs_climate:climate_damage",
+		criterion: ""
+	}]
+}
