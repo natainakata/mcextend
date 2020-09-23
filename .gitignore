@@ -2,7 +2,7 @@
 /backups/
 /coremods/
 /crash-reports/
-/journeymap/
+/journeymap/*
 /LittleMaidResource/
 /local/
 /logs/
