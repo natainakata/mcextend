@@ -64,3 +64,42 @@ for ingot, gear in gears {
 }
 
 recipes.remove(<dcs_climate:dcs_spindle:3>);
+
+// generate Oredict Color drop
+val color = <ore:dcsColor>;
+color.add(<dcs_climate:dcs_color:*>);
+
+
+recipes.remove(<modularmachinery:itemmodularium>);
+val dustllalloy = <contenttweaker:lowlevel_alloy_dust>;
+val llalloy = <modularmachinery:itemmodularium>;
+recipes.addShapeless(dustllalloy, [<ore:dustIron>, <ore:dustTin>, <ore:dustTin>, <ore:dustTin>]);
+recipes.addShaped(<contenttweaker:lowlevel_alloy_dust_block>,
+[
+  [dustllalloy, dustllalloy, dustllalloy],
+  [dustllalloy, dustllalloy, dustllalloy],
+  [dustllalloy, dustllalloy, dustllalloy]
+  ]
+);
+recipes.addShaped(<contenttweaker:lowlevel_alloy_block>,
+  [
+    [llalloy, llalloy, llalloy],
+    [llalloy, llalloy, llalloy],
+    [llalloy, llalloy, llalloy]
+  ]
+);
+
+recipes.addShapeless(<modularmachinery:itemmodularium> * 9, [<contenttweaker:lowlevel_alloy_block>]);
+
+furnace.addRecipe(<contenttweaker:lowlevel_alloy_block>, <contenttweaker:lowlevel_alloy_dust_block>);
+
+val llalloy_smelt = mods.hac.Smelting.newRecipe();
+
+llalloy_smelt.setInput(<contenttweaker:lowlevel_alloy_dust_block>);
+llalloy_smelt.setOutput(<contenttweaker:lowlevel_alloy_block>);
+llalloy_smelt.addTemperature(5);
+llalloy_smelt.addTemperature(6);
+llalloy_smelt.addHumidity(0);
+llalloy_smelt.addHumidity(1);
+llalloy_smelt.addAirflow(0);
+llalloy_smelt.ignite();
