@@ -3,6 +3,8 @@
 import mods.contenttweaker.VanillaFactory;
 import mods.contenttweaker.Block;
 import mods.contenttweaker.Item;
+import mods.contenttweaker.Fluid;
+import mods.contenttweaker.Color;
 
 var blockLlAlloy = VanillaFactory.createBlock("lowlevel_alloy_block", <blockmaterial:iron>);
 blockLlAlloy.setBlockHardness(3.0);
@@ -22,3 +24,8 @@ blockLlAlloyDust.register();
 
 var itemLlAlloyDust = VanillaFactory.createItem("lowlevel_alloy_dust");
 itemLlAlloyDust.register();
+
+var fluidmana = VanillaFactory.createFluid("extracted_mana", Color.fromHex("69ebff"));
+fluidmana.temperature = 300;
+fluidmana.luminosity = 9;
+fluidmana.register();

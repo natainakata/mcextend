@@ -69,6 +69,19 @@ recipes.remove(<dcs_climate:dcs_spindle:3>);
 val color = <ore:dcsColor>;
 color.add(<dcs_climate:dcs_color:*>);
 
+val vanillaflower = [
+  <minecraft:yellow_flower>,
+  <minecraft:red_flower:*>,
+  <minecraft:double_plant>,
+  <minecraft:double_plant:1>,
+  <minecraft:double_plant:4>,
+  <minecraft:double_plant:5>
+] as IItemStack[];
+
+val flowerdict = <ore:flower>;
+for i in vanillaflower {
+  flowerdict.add(i);
+}
 
 recipes.remove(<modularmachinery:itemmodularium>);
 val dustllalloy = <contenttweaker:lowlevel_alloy_dust>;
